@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+    <!-- Array properties -->
+
+    <!-- Array:  Single variable which can store multiple values. An array is a data structure that allows you to store a collection of elements, such as numbers, strings, objects, or other arrays, in a single variable. Arrays are defined using square brackets [] and each element in the array is separated by a comma. Array index always start from 0. -->
+
+    
+    
+
+<script>
+    const students=["sakshi", "pranay", "saurabh"]
+      console.log(`before added: `,students)
+
+      console.log(students.length);      //  1. length : To count total elements in the array.
+
+      students.push("neha", "vaibhavi");  //   2. push(): To add element from the end of array.
+
+      console.log(`after added: `,students)
+
+      students.pop();                         // 3. pop() : it is used to remove values from the end.
+
+      console.log(students);
+
+      students.push("shivani","swara");
+      console.log(`after added: `,students);  
+      
+      console.log(`index of 1 is : `,students[1]);  //   to find index number
+
+      console.log(students);
+
+      students.unshift("swaranjali");   //   unshift(): it is used to add elements at the starting point.
+      console.log(students);
+
+      students.shift();           //  shift(): it is used to remove element from the starting point.
+      console.log(students);
+
+      console.log(students.indexOf("neha"));  
+
+      const colors=["red","blue","orange","green"];
+      console.log(colors);
+
+      console.log(`length of colors is:`,colors.length);
+
+      console.log(`indexof blue is :`,colors.indexOf("blue"));
+
+      console.log(`before splice elements:`,colors);                                    
+      //   splice():  splice menthod it is used to remove as well as add elements.
+      colors.splice(1,2);                                     
+      console.log(`after splice remove elements are : `,colors);
+
+
+      console.log(`before adding elemnts:`, colors);
+    //   splice method to add elements.
+      colors.splice(1,0,"blue", "orange");               
+      console.log(`after adding elemnts:`, colors);
+
+      let newColors=colors.join("=");
+                            
+      console.log(newColors);     //   join(): it is used to convert elements into string format..
+                                  // also we can add seperators of our choise in the parameter.
+
+                            
+      console.log(Array.isArray(colors));   //   Array.isArray(): it is used to find type of elemets.
+
+      console.log(`before reverse elements: `,colors);
+      console.log(`after reverse elements: `,colors.reverse());  // reverse(): to reverse elements
+
+      console.log(colors.sort());  //   sort(): it used to sort elements in ascending order.
+
+      console.log(colors.sort().reverse());  //   it is used to sort and reverse elements.
+
+   
+
+
+    
+
+    
+
+
+                     
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </script>
+    
+</body>
+</html>
